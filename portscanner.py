@@ -20,7 +20,7 @@ print("-" * 60)
 t1 = datetime.now()
 
 # Using the range function to specify ports
-    try:
+try:
     for port in range(1,1024):
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock = sock.settimeout(.5)
